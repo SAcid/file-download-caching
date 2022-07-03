@@ -1,12 +1,15 @@
 spring:
+  profiles:
+    active: test
   cache:
     type: caffeine
     cache-names: fileDown
     caffeine:
       spec: maximumSize=4,expireAfterAccess=60s
 file:
-  location:
+  location: classpath:files/
 auth:
-  key:
-  value:
+  key: auth-key
+  value: aui1231231231!@#
+
 
